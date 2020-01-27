@@ -44,7 +44,18 @@ Install List Module
 ```
   composer require drupal/backup_migrate drupal/webform drupal/devel drupal/draggableviews
 ```
-
+Update Module 
+```
+composer update drupal/modulename --with-dependencies
+```
+Exemple: 
+```
+composer update drupal/devel --with-dependencies
+```
+Update Core Drupal
+```
+composer update drupal/core webflo/drupal-core-require-dev "symfony/*" --with-dependencies
+```
 The `composer create-project` command passes ownership of all files to the
 project that is created. You should create a new git repository, and commit
 all files not excluded by the .gitignore file.
@@ -157,3 +168,4 @@ To prevent this you can add this code to specify the PHP version you want to use
     }
 },
 ```
+
