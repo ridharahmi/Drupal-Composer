@@ -20,15 +20,29 @@ for your setup.
 After that you can create the project:
 
 ```
-composer create-project drupal-composer/drupal-project:8.x-dev peoject_name --no-interaction
+composer create-project drupal-composer/drupal-project:8.x-dev project_name --no-interaction
 ```
 
 With `composer require ...` you can download new dependencies to your
 installation.
 
 ```
-cd peoject_name
+   cd project_name
+```
+Install Module with composer
+```
+  composer require drupal/module_name
+```
+
+Exemple: 
+```
 composer require drupal/devel:~1.0
+composer require drupal/webform
+```
+
+Install List Module 
+```
+  composer require drupal/backup_migrate drupal/webform drupal/devel drupal/draggableviews
 ```
 
 The `composer create-project` command passes ownership of all files to the
