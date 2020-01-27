@@ -20,14 +20,14 @@ for your setup.
 After that you can create the project:
 
 ```
-composer create-project drupal-composer/drupal-project:8.x-dev some-dir --no-interaction
+composer create-project drupal-composer/drupal-project:8.x-dev peoject_name --no-interaction
 ```
 
 With `composer require ...` you can download new dependencies to your
 installation.
 
 ```
-cd some-dir
+cd peoject_name
 composer require drupal/devel:~1.0
 ```
 
